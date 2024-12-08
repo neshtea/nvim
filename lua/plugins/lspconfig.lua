@@ -5,7 +5,7 @@ return {
 
         lspconfig.clojure_lsp.setup({})
         lspconfig.elixirls.setup({
-           cmd = { 'elixir-ls' }
+            cmd = { 'elixir-ls' }
         })
         lspconfig.ocamlls.setup({
             cmd = { 'ocamllsp' }
@@ -15,7 +15,9 @@ return {
         lspconfig.nil_ls.setup({})
         lspconfig.ts_ls.setup({})
         lspconfig.metals.setup({})
+        lspconfig.rust_analyzer.setup({})
 
         vim.keymap.set("n", "<leader>l=", vim.lsp.buf.format)
+        vim.keymap.set("n", "<leader>laa", vim.lsp.buf.code_action)
     end
 }

@@ -14,6 +14,8 @@ vim.opt.undofile = false
 
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 vim.opt.termguicolors = true
 
@@ -35,7 +37,11 @@ vim.filetype.add({
 require("config.lazy")
 
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>x", ":.lua<CR>")
+vim.keymap.set("v", "<leader>x", ":lua<CR>")
 
 -- Global color settings
-local color = "tokyonight-night"
+local color = "gruvbox"
+-- local color = "tokyonight"
+-- local color = "everforest"
 vim.cmd.colorscheme(color)
