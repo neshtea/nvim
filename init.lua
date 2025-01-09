@@ -41,7 +41,8 @@ vim.keymap.set("n", "<leader>x", ":.lua<CR>")
 vim.keymap.set("v", "<leader>x", ":lua<CR>")
 
 -- Global color settings
+vim.g.background = "dark"
 local color = "gruvbox"
 -- local color = "tokyonight"
--- local color = "everforest"
+-- local color = "rose-pine"
 vim.cmd.colorscheme(color)
