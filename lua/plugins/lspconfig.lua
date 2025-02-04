@@ -13,6 +13,7 @@ return {
         })
         lspconfig.lua_ls.setup({})
         lspconfig.hls.setup({})
+        -- https://github.com/oxalica/nil/blob/main/dev/nvim-lsp.nix
         lspconfig.nil_ls.setup({
             autostart = true,
             settings = {
